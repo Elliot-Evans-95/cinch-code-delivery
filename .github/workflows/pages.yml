@@ -29,9 +29,6 @@ jobs:
         with:
           node-version: 16
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v1
-
       - name: Cache node_modules
         id: cache-node-modules
         uses: actions/cache@v2
@@ -46,7 +43,19 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+#      - name: Deploy to GitHub Pages
+#        uses: JamesIves/github-pages-deploy-action@v4
+#        with:
+#          folder: dist
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v1
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          folder: dist
+          path: 'dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@main
