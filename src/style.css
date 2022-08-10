@@ -1,0 +1,131 @@
+/* VARIABLES */
+:root {
+    --primary-color: rgb(140, 50, 190);
+    --bg-color: #f2f5ff;
+    --text-heading-color: #311c77;
+    --text-body-color: #2f2f2f;
+    --box-shadow-color: rgba(0, 0, 0, 0.5);
+
+    --default-transition-speed: 300ms;
+    --default-transition-style: ease-in-out;
+    --default-font-size: 16px;
+    --default-font-family: 'Overpass', sans-serif;
+
+    --header-z-index: 99;
+    --footer-z-index: 99;
+    --component-z-index: 1;
+    --content-z-index: 1;
+
+    --progress-bg-color: #ffffff
+}
+
+/* ANIMATIONS */
+@keyframes fadeInFromDown {
+    from {
+        transform: translate3d(0, 10px, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+.fadeInFromDown {
+    animation: fadeInFromDown var(--default-transition-speed) var(--default-transition-style);
+}
+
+@keyframes slideFromRight {
+    from {
+        position: relative;
+        left: 100%;
+    }
+    to {
+        position: relative;
+        left: 0;
+    }
+}
+
+.slideFromRight {
+    animation: slideFromRight var(--default-transition-speed) var(--default-transition-style);
+}
+
+/* BASE */
+body {
+    font-family: var(--default-font-family);
+    margin: 0;
+
+    background: var(--bg-color);
+
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    overflow: hidden;
+
+    font-size: var(--default-font-size);
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--text-heading-color);
+}
+
+p, li {
+    color: var(--text-body-color);
+}
+
+/* REST */
+.defaultPageTransition {
+    animation: slideFromRight var(--default-transition-speed) var(--default-transition-style);
+}
+
+
+.presentation-grid {
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: 10% 88% 2%;
+    grid-template-columns: auto;
+    grid-template-areas:
+            "header"
+            "content"
+            "footer";
+}
+
+.footer {
+    grid-area: footer;
+
+    background: var(--primary-color);
+    box-shadow: 0 -2px 20px 0 var(--box-shadow-color);
+    z-index: var(--footer-z-index);
+
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+}
+
+.header {
+    grid-area: header;
+
+    background: var(--primary-color);
+    box-shadow: 0 4px 10px 2px var(--box-shadow-color);
+    z-index: var(--header-z-index);
+
+    position: fixed;
+    width: 100vw;
+    top: 0;
+
+    padding: 1rem 1rem 0 1rem;
+}
+
+.content {
+   grid-area: content;
+}
+
+#app-shell {
+    margin: 1rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
