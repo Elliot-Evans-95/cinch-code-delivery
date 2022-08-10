@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "npm run build && parcel ./src/index.html",
-    "clear": "parcel clear",
+    "prebuild": "rm -rf dist",
     "build": "parcel build ./src/index.html",
     "serve": "parcel serve ./src/index.html",
     "test": "jest"
