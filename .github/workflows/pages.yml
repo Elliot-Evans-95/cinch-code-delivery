@@ -38,7 +38,7 @@ jobs:
           key: node_modules-${{ hashFiles('package-lock.json') }}
 
       - name: Install Dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
+#        if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci
 
       - name: Build
@@ -50,7 +50,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: '.'
+          path: './dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
