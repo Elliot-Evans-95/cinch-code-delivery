@@ -780,7 +780,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
     ],
     "user/assets/qr-code.png": [
       function (require, module, exports) {
-        module.exports = "./cinch-code-delivery/qr-code.93a1b1c2.png";
+        module.exports = "./cinch-code-delivery/qr-code-2.png";
       },
       {},
     ],
