@@ -738,61 +738,61 @@ parcelRequire = (function (modules, cache, entry, globalName) {
     ],
     "user/assets/me-2.webp": [
       function (require, module, exports) {
-        module.exports = "./me-2.3324cef9.webp";
+        module.exports = "./cinch-code-delivery/me-2.3324cef9.webp";
       },
       {},
     ],
     "user/assets/bombe.webp": [
       function (require, module, exports) {
-        module.exports = "./bombe.5b348b10.webp";
+        module.exports = "./cinch-code-delivery/bombe.5b348b10.webp";
       },
       {},
     ],
     "user/assets/punch-cards.webp": [
       function (require, module, exports) {
-        module.exports = "./punch-cards.e50ab96c.webp";
+        module.exports = "./cinch-code-delivery/punch-cards.e50ab96c.webp";
       },
       {},
     ],
     "user/assets/netscape.webp": [
       function (require, module, exports) {
-        module.exports = "./netscape.d41a3042.webp";
+        module.exports = "./cinch-code-delivery/netscape.d41a3042.webp";
       },
       {},
     ],
     "user/assets/cloud-computing.webp": [
       function (require, module, exports) {
-        module.exports = "./cloud-computing.4f0798b4.webp";
+        module.exports = "./cinch-code-delivery/cloud-computing.4f0798b4.webp";
       },
       {},
     ],
     "user/assets/scrum.webp": [
       function (require, module, exports) {
-        module.exports = "./scrum.2f338151.webp";
+        module.exports = "./cinch-code-delivery/scrum.2f338151.webp";
       },
       {},
     ],
     "user/assets/waterfall.webp": [
       function (require, module, exports) {
-        module.exports = "./waterfall.0a62e809.webp";
+        module.exports = "./cinch-code-delivery/waterfall.0a62e809.webp";
       },
       {},
     ],
     "user/assets/qr-code.png": [
       function (require, module, exports) {
-        module.exports = "./qr-code.93a1b1c2.png";
+        module.exports = "./cinch-code-delivery/qr-code.93a1b1c2.png";
       },
       {},
     ],
     "user/assets/kanban.png": [
       function (require, module, exports) {
-        module.exports = "./kanban.c4396910.png";
+        module.exports = "./cinch-code-delivery/kanban.c4396910.png";
       },
       {},
     ],
     "user/assets/github-actions.webp": [
       function (require, module, exports) {
-        module.exports = "./github-actions.511e8cfe.webp";
+        module.exports = "./cinch-code-delivery/github-actions.511e8cfe.webp";
       },
       {},
     ],
